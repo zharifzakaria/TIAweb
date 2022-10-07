@@ -13,7 +13,7 @@ module.exports = {
     },
     fontFamily: {
       Poppins: 'Poppins, sans-serif',
-      Verdana: 'Verdana, sans-serif'
+      InterT: 'Inter Tight, sans-serif'
     },
     extend: {
       colors: {
