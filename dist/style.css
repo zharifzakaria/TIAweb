@@ -1240,6 +1240,10 @@ video {
   padding-right: 1rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1706,6 +1710,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .xl\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .xl\:pt-24 {
+    padding-top: 6rem;
   }
 
   .xl\:text-start {
