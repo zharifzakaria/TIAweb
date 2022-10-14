@@ -101,56 +101,37 @@
           </div>
         </section>
 
-        <hr class="my-12">
-
-        <section class="max-w-screen-2xl mx-auto flex flex-col items-center justify-center p-4 mt-16">
+        <section class="mx-auto flex flex-col items-center justify-center px-4 py-16 mt-16 bg-tia-grey">
           <h3 class="text-3xl font-bold font-Poppins pb-4">Annual Fees</h3>
-          <table class="table-auto mt-8">
-            <thead>
-              <tr>
-                <th class="text-start">Fee Breakdown</th>
-                <th>Half Day</th>
-                <th>Full Day</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-4">Registration</td>
-                <td class="p-4">RM150</td>
-                <td class="p-4">RM150</td>
-              </tr>
-              <tr>
-                <td class="p-4">Learning Materials</td>
-                <td class="p-4">RM400</td>
-                <td class="p-4">RM800</td>
-              </tr>
-              <tr>
-                <td class="p-4">Events & Trips</td>
-                <td class="p-4">RM400</td>
-                <td class="p-4">RM400</td>
-              </tr>
-              <tr>
-                <td class="p-4">Uniform</td>
-                <td class="p-4">RM80</td>
-                <td class="p-4">RM80</td>
-              </tr>
-              <tr>
-                <td class="p-4">Management App</td>
-                <td class="p-4">RM170</td>
-                <td class="p-4">RM170</td>
-              </tr>
-              <tr>
-                <td class="p-4">Family Play Guidebook</td>
-                <td class="p-4">RM50</td>
-                <td class="p-4">RM50</td>
-              </tr>
-              <tr>
-                <td class="text-start p-4 font-bold">TOTAL</td>
-                <td class="p-4 font-bold">RM1250</td>
-                <td class="p-4 font-bold">RM1650</td>
-              </tr>
-            </tbody>
-          </table>
+          <select name="annualfees" id="annualfees" class="my-4 bg-blue-100 rounded-md px-4 py-1" onchange="handleChangeFees()">
+            <option value="halfday">Half Day</option>
+            <option value="fullday">Full Day</option>
+          </select>
+
+          <div class="flex gap-24 text-2xl font-thin text-gray-800">
+            <div class="items">
+              <ul>
+                <li class="pt-2">Registration</li>
+                <li class="pt-2">Learning Materials</li>
+                <li class="pt-2">Events & Trips</li>
+                <li class="pt-2">Uniform</li>
+                <li class="pt-2">Management App</li>
+                <li class="pt-2">Family Play Guidebook</li>
+                <li class="pt-2 mt-4 font-bold text-tia-blue text-3xl">TOTAL</li>
+              </ul>
+            </div>
+            <div class="prices">
+              <ul class="text-end">
+                <li class="pt-2">RM150</li>
+                <li id="changeLM" data-type="halfday" class="pt-2">RM400</li>
+                <li class="pt-2">RM400</li>
+                <li class="pt-2">RM80</li>
+                <li class="pt-2">RM170</li>
+                <li class="pt-2">RM50</li>
+                <li id="changeTotal" class="pt-2 mt-4 font-bold text-tia-blue text-3xl">RM1250</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <!-- Quote -->
@@ -205,5 +186,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function handleChangeFees() {
+        var changeLM = document.querySelector("#changeLM");
+        var changeTotal = document.querySelector("#changeTotal");
+
+        if(changeLM.dataset.type === 'halfday') {
+          changeLM.dataset.type = 'fullday'
+          changeLM.textContent = 'RM800'
+          changeTotal.textContent = 'RM1650'
+        } else if(changeLM.dataset.type === 'fullday') {
+          changeLM.dataset.type = 'halfday'
+          changeLM.textContent = 'RM400'
+          changeTotal.textContent = 'RM1250'
+        }
+      }
+    </script>
+
   </body>
 </html>

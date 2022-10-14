@@ -656,6 +656,26 @@ video {
   margin-bottom: 4rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -718,6 +738,10 @@ video {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .block {
@@ -893,6 +917,10 @@ video {
   gap: 2rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -915,6 +943,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -984,8 +1016,31 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.bg-orange-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-2 {
@@ -1046,6 +1101,16 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-4 {
@@ -1120,6 +1185,10 @@ video {
   text-align: start;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-InterT {
   font-family: Inter Tight, sans-serif;
 }
@@ -1190,6 +1259,10 @@ video {
   font-weight: 300;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .leading-tight {
   line-height: 1.25;
 }
@@ -1251,6 +1324,11 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1494,6 +1572,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .xl\:bg-transparent {
     background-color: transparent;
+  }
+
+  .xl\:p-4 {
+    padding: 1rem;
   }
 
   .xl\:py-6 {
