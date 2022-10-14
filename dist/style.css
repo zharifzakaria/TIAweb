@@ -601,6 +601,10 @@ video {
   top: 5680px;
 }
 
+.top-\[120vh\] {
+  top: 120vh;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -645,6 +649,11 @@ video {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .ml-0 {
@@ -703,6 +712,14 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -713,6 +730,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .hidden {
@@ -781,6 +802,14 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
 }
 
 @-webkit-keyframes fadein {
@@ -886,6 +915,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-t {
@@ -1071,8 +1104,20 @@ video {
   padding-right: 0.25rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .font-InterT {
@@ -1203,6 +1248,11 @@ video {
   color: rgb(147 197 253 / var(--tw-text-opacity));
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1321,6 +1371,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
   }
 
+  .xl\:my-24 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
   .xl\:ml-24 {
     margin-left: 6rem;
   }
@@ -1331,6 +1386,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .xl\:-mt-\[120px\] {
     margin-top: -120px;
+  }
+
+  .xl\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .xl\:block {
@@ -1371,6 +1430,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .xl\:w-2\/5 {
     width: 40%;
+  }
+
+  .xl\:max-w-screen-2xl {
+    max-width: 1536px;
   }
 
   .xl\:flex-row {
@@ -1501,6 +1564,15 @@ h1, h2, h3, h4, h5, h6 {
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:leading-loose {
+    line-height: 2;
   }
 }
 
