@@ -60,3 +60,17 @@ window.addEventListener("scroll", function () {
     remove_class_on_scroll();
   }
 });
+
+function openMenu() {
+  var sideMenu = document.querySelector("#sideMenu");
+  sideMenu.classList.remove("w-0");
+  sideMenu.classList.add("w-full");
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeMenu() {
+  var sideMenu = document.querySelector("#sideMenu");
+  sideMenu.classList.remove("w-full");
+  sideMenu.classList.add("w-0");
+  document.body.classList.remove("overflow-hidden");
+}
